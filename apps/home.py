@@ -90,3 +90,8 @@ def app():
         ax.set(ylim=(0, max(records_df['calories_burnt'])+50), ylabel = 'Calories burnt', xlabel = '')
         ax.set_xticklabels(records_df['date_only'], rotation = 45)
         st.pyplot(fig)
+
+    with st.expander('See more'):
+        st.write("""
+        This is an expander module that may or may not work
+        """)
